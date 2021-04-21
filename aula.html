@@ -5,24 +5,57 @@
     <title>Web Responsible</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        input[type=text], select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div>
     <form>
         <label for="fname">Nome</label><br>
-        <input type="text" id="fname" name="fname" value="Ademir"><br>
+        <input type="text" id="fname" name="fname" placeholder="Nome"><br>
+
         <label for="lname">Sobrenome</label><br>
-        <input type="text" id="lname" name="lname" value="Gomes"><br>
+        <input type="text" id="lname" name="lname"  placeholder="Sobrenome..."><br>
+
+        <label for="country">País</label>
+        <select name="country" id="country">País
+        <option value="brasil">Brasil</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Venezuela">Venezuela</option>
+    </select>
+
+
+
     </form>
     
     <h2>Botões de Radio</h2>
     <form action="">
         <input type="radio" id="homem" name="gênero" value="Homem">
         <label for="homem">ome</label><br>
+
         <input type="radio" id="mulher" name="gênero" value="Mulher">
         <label for="homem">muié</label><br>
+
         <input type="radio" id="outros" name="gênero" value="outros">
         <label for="homem">outros</label>
+
+
     </form>
+    </div>
 
     <h2>Caixa de Seleção</h2>
     <form action="">
